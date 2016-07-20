@@ -66,6 +66,9 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f050008
 			public const int button1 = 2131034120;
 			
+			// aapt resource value: 0x7f050009
+			public const int button2 = 2131034121;
+			
 			// aapt resource value: 0x7f050005
 			public const int helpinfoLabel = 2131034117;
 			

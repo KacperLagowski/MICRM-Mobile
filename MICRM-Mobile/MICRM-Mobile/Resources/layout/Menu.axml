@@ -19,9 +19,15 @@
         p1:id="@+id/textView1"
         p1:layout_gravity="center_horizontal" />
     <Button
-        p1:text="Button"
+        p1:text="Basic Search"
         p1:layout_width="324.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/button1"
+        p1:layout_gravity="center_horizontal" />
+    <Button
+        p1:text="Firm or Branch Search"
+        p1:layout_width="319.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button2"
         p1:layout_gravity="center_horizontal" />
 </LinearLayout>
