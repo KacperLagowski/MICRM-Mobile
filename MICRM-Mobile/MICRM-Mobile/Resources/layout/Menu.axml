@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="138.0dp"
+        p1:layout_height="132.0dp"
+        p1:id="@+id/imageView1"
+        p1:layout_gravity="center_horizontal"
+        p1:foreground="@drawable/crm" />
+    <TextView
+        p1:text="Select from a list of options"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="283.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1"
+        p1:layout_gravity="center_horizontal" />
+    <Button
+        p1:text="Button"
+        p1:layout_width="324.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button1"
+        p1:layout_gravity="center_horizontal" />
+</LinearLayout>

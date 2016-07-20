@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <ImageButton
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="213.0dp"
+        p1:layout_height="210.0dp"
+        p1:id="@+id/micrmButton"
+        p1:layout_gravity="center"
+        p1:foreground="@drawable/crm"
+        p1:background="@drawable/crm" />
+    <EditText
+        p1:inputType="textPersonName"
+        p1:layout_width="296.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/usernameTextBox"
+        p1:layout_gravity="center_horizontal"
+        p1:text="Username"
+        p1:layout_marginTop="@android:dimen/notification_large_icon_height"
+        p1:textAlignment="0" />
+    <EditText
+        p1:inputType="textPassword"
+        p1:layout_width="296.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/passwordTextBox"
+        p1:layout_gravity="center_horizontal"
+        p1:text="Password" />
+    <Button
+        p1:text="Log in to MICRM"
+        p1:layout_width="302.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/loginButton"
+        p1:layout_gravity="center_horizontal" />
+    <TextView
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="292.0dp"
+        p1:layout_height="95.0dp"
+        p1:id="@+id/helpinfoLabel"
+        p1:layout_gravity="center_horizontal"
+        p1:textAlignment="textEnd"
+        p1:textDirection="locale"
+        p1:text="If you have any problems logging into the system, please click on the MICRM icon" />
+</LinearLayout>
