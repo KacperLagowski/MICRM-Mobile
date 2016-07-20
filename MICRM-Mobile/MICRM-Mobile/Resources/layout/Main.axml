@@ -42,5 +42,5 @@
         p1:layout_gravity="center_horizontal"
         p1:textAlignment="textEnd"
         p1:textDirection="locale"
-        p1:text="If you have any problems logging into the system, please click on the MICRM icon" />
+        p1:text="If you have any problems logging into the system, please click on the MICRM icon. It will directly connect you with the IT team." />
 </LinearLayout>

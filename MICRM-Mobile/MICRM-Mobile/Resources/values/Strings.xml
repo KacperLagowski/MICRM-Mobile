@@ -2,5 +2,4 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">MICRM-Mobile</string>
-  <string name="">MICRM-Mobile</string>
 </resources>

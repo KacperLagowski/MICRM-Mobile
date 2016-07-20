@@ -10,7 +10,8 @@
         p1:layout_height="132.0dp"
         p1:id="@+id/imageView1"
         p1:layout_gravity="center_horizontal"
-        p1:foreground="@drawable/crm" />
+        p1:foreground="@drawable/crm"
+        p1:background="@drawable/crm" />
     <TextView
         p1:text="Select from a list of options"
         p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -20,14 +21,20 @@
         p1:layout_gravity="center_horizontal" />
     <Button
         p1:text="Basic Search"
-        p1:layout_width="324.0dp"
+        p1:layout_width="314.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/button1"
         p1:layout_gravity="center_horizontal" />
     <Button
         p1:text="Firm or Branch Search"
-        p1:layout_width="319.0dp"
+        p1:layout_width="317.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/button2"
+        p1:layout_gravity="center_horizontal" />
+    <Button
+        p1:text="Rating Search"
+        p1:layout_width="314.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/button3"
         p1:layout_gravity="center_horizontal" />
 </LinearLayout>

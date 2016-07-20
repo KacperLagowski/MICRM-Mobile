@@ -15,6 +15,8 @@ namespace MICRM_Mobile
     {
         EditText usernameText;
         EditText passwordText;
+        Button login;
+        View menu;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -32,8 +34,15 @@ namespace MICRM_Mobile
             passwordText.Click += passwordText_Click;
             ImageButton micrmButton = FindViewById<ImageButton>(Resource.Id.micrmButton);
             micrmButton.Click += micrmButton_Click;
+            login = FindViewById<Button>(Resource.Id.loginButton);
+            login.Click += login_Click;
 
 
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(Menu));
         }
 
         private void micrmButton_Click(object sender, EventArgs e)
