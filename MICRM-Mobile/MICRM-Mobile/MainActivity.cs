@@ -16,16 +16,15 @@ namespace MICRM_Mobile
         EditText usernameText;
         EditText passwordText;
         Button login;
-        View menu;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
+            // The main layout
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
+            //controls declared in the region below:
+            #region 
             Button myButton = FindViewById<Button>(Resource.Id.loginButton);
             myButton.Click += MyButton_Click;
             usernameText = FindViewById<EditText>(Resource.Id.usernameTextBox);
@@ -35,12 +34,15 @@ namespace MICRM_Mobile
             ImageButton micrmButton = FindViewById<ImageButton>(Resource.Id.micrmButton);
             micrmButton.Click += micrmButton_Click;
             login = FindViewById<Button>(Resource.Id.loginButton);
-            login.Click += login_Click;
+            login.Click += Login_Click;
+            
+            #endregion
 
 
         }
 
-        private void login_Click(object sender, EventArgs e)
+
+        private void Login_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(Menu));
         }
@@ -60,7 +62,6 @@ namespace MICRM_Mobile
         {
             usernameText.Text = "";
         }
-
         private void MyButton_Click(object sender, EventArgs e)
         {
            

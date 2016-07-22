@@ -5,12 +5,10 @@
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
     <ImageButton
-        p1:src="@android:drawable/ic_menu_gallery"
-        p1:layout_width="213.0dp"
-        p1:layout_height="210.0dp"
+        p1:layout_width="247.0dp"
+        p1:layout_height="236.0dp"
         p1:id="@+id/micrmButton"
         p1:layout_gravity="center"
-        p1:foreground="@drawable/crm"
         p1:background="@drawable/crm" />
     <EditText
         p1:inputType="textPersonName"

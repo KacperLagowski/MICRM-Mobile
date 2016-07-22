@@ -12,4 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="182.0dp"
+        android:layout_height="167.0dp"
+        android:id="@+id/imageView1"
+        android:layout_gravity="center_horizontal"
+        android:foreground="@drawable/crm"
+        android:background="@drawable/crm"
+        android:layout_marginTop="@android:dimen/app_icon_size" />
 </LinearLayout>

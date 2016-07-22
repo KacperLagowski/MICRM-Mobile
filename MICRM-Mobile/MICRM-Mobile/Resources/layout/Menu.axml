@@ -5,36 +5,37 @@
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
     <ImageView
-        p1:src="@android:drawable/ic_menu_gallery"
-        p1:layout_width="138.0dp"
-        p1:layout_height="132.0dp"
+        p1:src="@drawable/crm"
+        p1:layout_width="178.0dp"
+        p1:layout_height="176.0dp"
         p1:id="@+id/imageView1"
         p1:layout_gravity="center_horizontal"
-        p1:foreground="@drawable/crm"
-        p1:background="@drawable/crm" />
+        p1:background="@drawable/crm"
+        p1:layout_marginTop="@android:dimen/app_icon_size" />
     <TextView
         p1:text="Select from a list of options"
         p1:textAppearance="?android:attr/textAppearanceLarge"
         p1:layout_width="283.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView1"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:layout_marginTop="@android:dimen/app_icon_size" />
     <Button
         p1:text="Basic Search"
         p1:layout_width="314.0dp"
         p1:layout_height="wrap_content"
-        p1:id="@+id/button1"
-        p1:layout_gravity="center_horizontal" />
-    <Button
-        p1:text="Firm or Branch Search"
-        p1:layout_width="317.0dp"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/button2"
+        p1:id="@+id/searchButton"
         p1:layout_gravity="center_horizontal" />
     <Button
         p1:text="Rating Search"
-        p1:layout_width="314.0dp"
+        p1:layout_width="318.0dp"
         p1:layout_height="wrap_content"
-        p1:id="@+id/button3"
+        p1:id="@+id/ratingButton"
+        p1:layout_gravity="center_horizontal" />
+    <Button
+        p1:text="seneca contact list"
+        p1:layout_width="317.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/contactsButton"
         p1:layout_gravity="center_horizontal" />
 </LinearLayout>
