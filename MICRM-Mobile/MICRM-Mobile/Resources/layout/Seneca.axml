@@ -11,12 +11,11 @@
         android:scrollbarSize="@android:dimen/app_icon_size"
         android:scrollbarStyle="outsideOverlay">
         <ImageView
-            android:src="@drawable/crm"
+            android:src="@drawable/phone"
             android:layout_width="178.0dp"
             android:layout_height="176.0dp"
             android:id="@+id/imageView1"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/crm"
             android:layout_marginTop="@android:dimen/app_icon_size" />
         <TextView
             android:text="Select the person you would like to contact"

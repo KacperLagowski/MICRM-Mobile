@@ -16,6 +16,7 @@ namespace MICRM_Mobile
     public class Menu : Activity
     {
         Button sen;
+        Button basic;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,6 +28,14 @@ namespace MICRM_Mobile
 
             sen = FindViewById<Button>(Resource.Id.contactsButton);
             sen.Click += Sen_Click1;
+
+            basic = FindViewById<Button>(Resource.Id.searchButton);
+            basic.Click += Basic_Click;
+        }
+
+        private void Basic_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(BasicSearch));
         }
 
         private void Sen_Click1(object sender, EventArgs e)
