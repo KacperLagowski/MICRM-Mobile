@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Uri = Android.Net.Uri;
 
 namespace MICRM_Mobile
 {
@@ -62,45 +63,112 @@ namespace MICRM_Mobile
             elstonmobile = FindViewById<Button>(Resource.Id.elstonMobile);
             elstonmobile.Click += elstonmobile_Click;
 
-            elstonoffice = FindViewById<Button>(Resource.Id.els);
-            usernameText.Click += usernameText_Click;
+            elstonoffice = FindViewById<Button>(Resource.Id.elstonOffice);
+            elstonoffice.Click += elstonoffice_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            borrowsmobile = FindViewById<Button>(Resource.Id.borrowsMobile);
+            borrowsmobile.Click += borrowsmobile_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            borrowsoffice = FindViewById<Button>(Resource.Id.borrowsOffice);
+            borrowsoffice.Click += borrowsoffice_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            wrightmobile = FindViewById<Button>(Resource.Id.wrightMobile);
+            wrightmobile.Click += wrightmobile_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            wrightoffice = FindViewById<Button>(Resource.Id.wrightOffice);
+            wrightoffice.Click += wrightoffice_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            taylormobile = FindViewById<Button>(Resource.Id.taylorMobile);
+            taylormobile.Click += taylormobile_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            tayloroffice = FindViewById<Button>(Resource.Id.taylorOffice);
+            tayloroffice.Click += tayloroffice_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
+            lagowskimobile = FindViewById<Button>(Resource.Id.lagowskiMobile);
+            lagowskimobile.Click += lagowskimobile_Click;
 
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
-
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
-
-            usernameText = FindViewById<Button>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
-
+            lagowskioffice = FindViewById<Button>(Resource.Id.lagowskiOffice);
+            lagowskioffice.Click += lagowskioffice_Click;
             #endregion
+        }
+
+        //Functionality of buttons inside region below
+        #region
+        private void lagowskioffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062482")));
+        }
+
+        private void lagowskimobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07578878278")));
+        }
+
+        private void tayloroffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062466")));
+        }
+
+        private void taylormobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07809659244")));
+        }
+
+        private void wrightoffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062478")));
+        }
+
+        private void wrightmobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07793537762")));
+        }
+
+        private void borrowsoffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062461")));
+        }
+
+        private void borrowsmobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07917403770")));
+        }
+
+        private void elstonoffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062470")));
+        }
+
+        private void elstonmobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07475362236")));
+        }
+
+        private void smithoffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062468")));
+        }
+
+        private void smithmobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07775724682")));
+        }
+
+        private void thomasoffice_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062480")));
+        }
+
+        private void thomasmobile_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:07469392164")));
         }
 
         private void mainoffice_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062450")));
         }
+
+        #endregion
     }
 }
