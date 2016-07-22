@@ -17,6 +17,7 @@ namespace MICRM_Mobile
     {
         Button sen;
         Button basic;
+        Button rating;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +32,14 @@ namespace MICRM_Mobile
 
             basic = FindViewById<Button>(Resource.Id.searchButton);
             basic.Click += Basic_Click;
+
+            rating = FindViewById<Button>(Resource.Id.ratingButton);
+            rating.Click += Rating_Click;
+        }
+
+        private void Rating_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(RatingSearch));
         }
 
         private void Basic_Click(object sender, EventArgs e)

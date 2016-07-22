@@ -2,4 +2,24 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">MICRM-Mobile</string>
+   <string name="owner_prompt">Rating Owner:</string>
+   <string-array name="user_array">
+    <item>Peter</item>
+    <item>David T</item>
+    <item>David B</item>
+    <item>Elaine</item>
+    <item>Daniel</item>
+    <item>Martin</item>
+    <item>Ian</item>
+    <item>Alan</item>
+    <item>Shaun</item>
+    <item>Steve</item>
+    <item>Catherine</item>
+    <item>Richard</item>
+    <item>Tom</item>
+    <item>Mark</item>
+    <item>Kacper</item>
+     
+   </string-array>
+
 </resources>

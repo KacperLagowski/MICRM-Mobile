@@ -20,6 +20,8 @@ namespace MICRM_Mobile
         {
             base.OnCreate(bundle);
 
+
+
             // The main layout
             SetContentView(Resource.Layout.Main);
 

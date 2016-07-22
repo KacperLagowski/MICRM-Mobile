@@ -25,7 +25,8 @@
         p1:layout_width="314.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/searchButton"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:layout_marginTop="25dip" />
     <Button
         p1:text="Rating Search"
         p1:layout_width="318.0dp"
