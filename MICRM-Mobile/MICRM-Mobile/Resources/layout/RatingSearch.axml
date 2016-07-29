@@ -1,34 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent">
-    <ImageButton
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="245.0dp"
-        android:layout_height="250.0dp"
-        android:id="@+id/imageButton1"
-        android:background="@drawable/rating2"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dip" />
-    <TextView
-        android:text="Select from options below"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="262.0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_gravity="center_horizontal" />
-    <TextView
-        android:text="Rating Owner"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="113.0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dip" />
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="36.0dp"
-        android:id="@+id/ownerSpinner"
-        android:layout_marginTop="10dip" />
-</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="245.0dp"
+            android:layout_height="250.0dp"
+            android:id="@+id/imageButton1"
+            android:background="@drawable/rating2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dip" />
+        <TextView
+            android:text="Select from options below"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="262.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Rating Owner"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="113.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dip" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="36.0dp"
+            android:id="@+id/ownerSpinner"
+            android:layout_marginTop="10dip" />
+        <TextView
+            android:text="Branch Rating"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="113.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dip" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="36.0dp"
+            android:id="@+id/ratingSpinner"
+            android:layout_marginTop="10dip" />
+        <TextView
+            android:text="Branch Rating Subject"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="183.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dip" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="36.0dp"
+            android:id="@+id/subjectSpinner"
+            android:layout_marginTop="10dip" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="177.5dp"
+            android:id="@+id/listView1" />
+    </LinearLayout>
+</ScrollView>

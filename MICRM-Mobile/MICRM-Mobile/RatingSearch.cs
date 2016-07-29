@@ -15,29 +15,54 @@ namespace MICRM_Mobile
     [Activity(Label = "RatingSearch")]
     public class RatingSearch : Activity
     {
-        Spinner spinner;
+        Spinner Userspinner;
+        Spinner Ratingspinner;
+        Spinner Subjecspinner;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.RatingSearch);
+            #region
+            Userspinner = FindViewById<Spinner>(Resource.Id.ownerSpinner);
 
-            spinner = FindViewById<Spinner>(Resource.Id.ownerSpinner);
-
-            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            Userspinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Userspinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
                     this, Resource.Array.user_array, Android.Resource.Layout.SimpleSpinnerItem);
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            spinner.Adapter = adapter;
+            Userspinner.Adapter = adapter;
+            #endregion
+            Ratingspinner = FindViewById<Spinner>(Resource.Id.ratingSpinner);
+
+            Ratingspinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Ratingspinner_ItemSelected);
+            var adapter2 = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.rating_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+            adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            Userspinner.Adapter = adapter;
+
+            Userspinner = FindViewById<Spinner>(Resource.Id.ownerSpinner);
+
+            Userspinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Userspinner_ItemSelected);
+            var adapter3 = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.user_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            Userspinner.Adapter = adapter;
         }
 
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        private void Ratingspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
-            Spinner spinner = (Spinner)sender;
+            throw new NotImplementedException();
+        }
 
-            string user = spinner.SelectedItem.ToString();
+        private void Userspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner Userspinner = (Spinner)sender;
+
+            string user = Userspinner.SelectedItem.ToString();
         }
     }
 }

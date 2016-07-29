@@ -3,4 +3,9 @@
 	<uses-sdk android:minSdkVersion="16" />
 	<application android:label="MICRM_Mobile"></application>
   <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+  <receiver android:name=".ConnectivityReceiver">
+    <intent-filter>
+      <action android:name="vpn.connectivity" />
+    </intent-filter>
+  </receiver>
 </manifest>

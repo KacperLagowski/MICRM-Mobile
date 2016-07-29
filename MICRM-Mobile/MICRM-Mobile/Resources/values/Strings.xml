@@ -22,4 +22,19 @@
      
    </string-array>
 
+  <string-array name="rating_array">
+    <item>Any</item>
+    <item>Opportunity</item>
+    <item>Yes</item>
+    <item>No</item>
+    <item>Maybe</item>
+
+  </string-array>
+
+  <string-array name="subject_array">
+    <item>SIGT</item>
+    <item>Growth Fund</item>
+    <item>Income Fund</item>
+
+  </string-array>
 </resources>
