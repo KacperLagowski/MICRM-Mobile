@@ -67,28 +67,43 @@ namespace MICRM_Mobile
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int crm = 2130837504;
+			public const int Branch = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int crm = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int phone = 2130837506;
+			public const int Employee = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int rating = 2130837507;
+			public const int Firm = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int rating2 = 2130837508;
+			public const int Icon = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int search = 2130837509;
+			public const int Individual = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int search2 = 2130837510;
+			public const int jefe = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int settings = 2130837511;
+			public const int phone = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int rating = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int rating2 = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int search = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int search2 = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int settings = 2130837516;
 			
 			static Drawable()
 			{
@@ -103,20 +118,23 @@ namespace MICRM_Mobile
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06001a
-			public const int borrowsMobile = 2131099674;
+			// aapt resource value: 0x7f06002b
+			public const int MainList = 2131099691;
 			
-			// aapt resource value: 0x7f06001b
-			public const int borrowsOffice = 2131099675;
+			// aapt resource value: 0x7f060021
+			public const int borrowsMobile = 2131099681;
+			
+			// aapt resource value: 0x7f060022
+			public const int borrowsOffice = 2131099682;
 			
 			// aapt resource value: 0x7f06000a
 			public const int contactsButton = 2131099658;
 			
-			// aapt resource value: 0x7f060018
-			public const int elstonMobile = 2131099672;
+			// aapt resource value: 0x7f06001f
+			public const int elstonMobile = 2131099679;
 			
-			// aapt resource value: 0x7f060019
-			public const int elstonOffice = 2131099673;
+			// aapt resource value: 0x7f060020
+			public const int elstonOffice = 2131099680;
 			
 			// aapt resource value: 0x7f060005
 			public const int helpinfoLabel = 2131099653;
@@ -124,14 +142,17 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f06000c
 			public const int imageButton1 = 2131099660;
 			
+			// aapt resource value: 0x7f060012
+			public const int imageButton2 = 2131099666;
+			
 			// aapt resource value: 0x7f060006
 			public const int imageView1 = 2131099654;
 			
-			// aapt resource value: 0x7f060020
-			public const int lagowskiMobile = 2131099680;
+			// aapt resource value: 0x7f060027
+			public const int lagowskiMobile = 2131099687;
 			
-			// aapt resource value: 0x7f060021
-			public const int lagowskiOffice = 2131099681;
+			// aapt resource value: 0x7f060028
+			public const int lagowskiOffice = 2131099688;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
@@ -139,11 +160,14 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f060011
 			public const int listView1 = 2131099665;
 			
+			// aapt resource value: 0x7f06002a
+			public const int listView2 = 2131099690;
+			
 			// aapt resource value: 0x7f060004
 			public const int loginButton = 2131099652;
 			
-			// aapt resource value: 0x7f060013
-			public const int mainOffice = 2131099667;
+			// aapt resource value: 0x7f06001a
+			public const int mainOffice = 2131099674;
 			
 			// aapt resource value: 0x7f060001
 			public const int micrmButton = 2131099649;
@@ -166,23 +190,23 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f060008
 			public const int searchButton = 2131099656;
 			
-			// aapt resource value: 0x7f060022
-			public const int searchControl = 2131099682;
+			// aapt resource value: 0x7f060029
+			public const int searchControl = 2131099689;
 			
-			// aapt resource value: 0x7f060016
-			public const int smithMobile = 2131099670;
+			// aapt resource value: 0x7f06001d
+			public const int smithMobile = 2131099677;
 			
-			// aapt resource value: 0x7f060017
-			public const int smithOffice = 2131099671;
+			// aapt resource value: 0x7f06001e
+			public const int smithOffice = 2131099678;
 			
 			// aapt resource value: 0x7f060010
 			public const int subjectSpinner = 2131099664;
 			
-			// aapt resource value: 0x7f06001e
-			public const int taylorMobile = 2131099678;
+			// aapt resource value: 0x7f060025
+			public const int taylorMobile = 2131099685;
 			
-			// aapt resource value: 0x7f06001f
-			public const int taylorOffice = 2131099679;
+			// aapt resource value: 0x7f060026
+			public const int taylorOffice = 2131099686;
 			
 			// aapt resource value: 0x7f060007
 			public const int textView1 = 2131099655;
@@ -190,23 +214,41 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f06000d
 			public const int textView2 = 2131099661;
 			
-			// aapt resource value: 0x7f060012
-			public const int textView3 = 2131099666;
+			// aapt resource value: 0x7f060013
+			public const int textView3 = 2131099667;
 			
 			// aapt resource value: 0x7f060014
-			public const int thomasMobile = 2131099668;
+			public const int textView4 = 2131099668;
 			
 			// aapt resource value: 0x7f060015
-			public const int thomasOffice = 2131099669;
+			public const int textView5 = 2131099669;
+			
+			// aapt resource value: 0x7f060016
+			public const int textView6 = 2131099670;
+			
+			// aapt resource value: 0x7f060017
+			public const int textView7 = 2131099671;
+			
+			// aapt resource value: 0x7f060018
+			public const int textView8 = 2131099672;
+			
+			// aapt resource value: 0x7f060019
+			public const int textView9 = 2131099673;
+			
+			// aapt resource value: 0x7f06001b
+			public const int thomasMobile = 2131099675;
+			
+			// aapt resource value: 0x7f06001c
+			public const int thomasOffice = 2131099676;
 			
 			// aapt resource value: 0x7f060002
 			public const int usernameTextBox = 2131099650;
 			
-			// aapt resource value: 0x7f06001c
-			public const int wrightMobile = 2131099676;
+			// aapt resource value: 0x7f060023
+			public const int wrightMobile = 2131099683;
 			
-			// aapt resource value: 0x7f06001d
-			public const int wrightOffice = 2131099677;
+			// aapt resource value: 0x7f060024
+			public const int wrightOffice = 2131099684;
 			
 			static Id()
 			{
@@ -231,10 +273,13 @@ namespace MICRM_Mobile
 			public const int RatingSearch = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Seneca = 2130903043;
+			public const int SearchResults = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SimpleSearch = 2130903044;
+			public const int Seneca = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int SimpleSearch = 2130903045;
 			
 			static Layout()
 			{

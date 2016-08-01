@@ -81,11 +81,11 @@ namespace MICRM_Mobile
 
         private void passwordText_Click(object sender, EventArgs e)
         {
-            passwordText.Text = "";
+            passwordText.Text = String.Empty;
         }
         private void usernameText_Click(object sender, EventArgs e)
         {
-            usernameText.Text = "";
+            usernameText.Text = String.Empty;
         }
         private void MyButton_Click(object sender, EventArgs e)
         {
