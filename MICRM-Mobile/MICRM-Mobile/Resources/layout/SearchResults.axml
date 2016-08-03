@@ -8,28 +8,63 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageButton
-            android:src="@android:drawable/ic_menu_gallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton2" />
-        <ImageButton
-            android:layout_width="113.5dp"
-            android:layout_height="114.5dp"
+            android:layout_width="136.5dp"
+            android:layout_height="129.5dp"
             android:id="@+id/imageButton1"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/jefe" />
+            android:background="@drawable/indi" />
         <TextView
-            android:text="Name:"
+            android:text="Company:"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" />
+            android:id="@+id/textView9" />
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4" />
+            android:id="@+id/companyTextView"
+            android:textColor="@android:color/holo_blue_light" />
+        <TextView
+            android:text="First Name:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstnameTextView"
+            android:textColor="@android:color/holo_blue_light" />
+        <TextView
+            android:text="Last Name:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastnameTextView" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastnameTextView"
+            android:textColor="@android:color/holo_blue_light" />
+        <TextView
+            android:text="Job Title:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobTextView"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Email Address:"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -41,9 +76,10 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView6" />
+            android:id="@+id/emailTextView"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
-            android:text="Phone number (Work):"
+            android:text="Phone number:"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,31 +89,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
-        <TextView
-            android:text="Phone number (Work):"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" />
-        <TextView
-            android:text="Small Text"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
-        <TextView
-            android:text="Phone number (Work):"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView7" />
-        <TextView
-            android:text="Small Text"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8" />
+            android:id="@+id/phoneTextView"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Address:"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -89,7 +102,29 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="359.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:id="@+id/address1TextView"
+            android:textColor="@android:color/holo_blue_light" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="359.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/address2TextView"
+            android:textColor="#ff33b5e5" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="359.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/address3TextView"
+            android:textColor="#ff33b5e5" />
+        <TextView
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="359.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/postcodeTextView"
+            android:textColor="#ff33b5e5" />
         <TextView
             android:text="Tags:"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -101,6 +136,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="359.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:id="@+id/tagsTextView"
+            android:textColor="#ff33b5e5" />
     </LinearLayout>
 </ScrollView>
