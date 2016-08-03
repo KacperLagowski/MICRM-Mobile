@@ -118,8 +118,8 @@ namespace MICRM_Mobile
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06002b
-			public const int MainList = 2131099691;
+			// aapt resource value: 0x7f06002a
+			public const int MainList = 2131099690;
 			
 			// aapt resource value: 0x7f060021
 			public const int borrowsMobile = 2131099681;
@@ -159,9 +159,6 @@ namespace MICRM_Mobile
 			
 			// aapt resource value: 0x7f060011
 			public const int listView1 = 2131099665;
-			
-			// aapt resource value: 0x7f06002a
-			public const int listView2 = 2131099690;
 			
 			// aapt resource value: 0x7f060004
 			public const int loginButton = 2131099652;
@@ -280,6 +277,9 @@ namespace MICRM_Mobile
 			
 			// aapt resource value: 0x7f030005
 			public const int SimpleSearch = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int test = 2130903046;
 			
 			static Layout()
 			{

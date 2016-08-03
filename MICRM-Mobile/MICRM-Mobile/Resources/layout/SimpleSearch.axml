@@ -36,7 +36,8 @@
             android:id="@+id/searchControl"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dip"
-            android:backgroundTint="#ffc0cbff" />
+            android:backgroundTint="#ffc0cbff"
+            android:text="taylor" />
         <Button
             android:text="Confirm"
             android:layout_width="420.0dp"

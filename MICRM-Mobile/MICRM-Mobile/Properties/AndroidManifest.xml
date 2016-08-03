@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MICRM_Mobile.MICRM_Mobile" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="16" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MICRM_Mobile.MICRM_Mobile" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="19" />
 	<application android:label="MICRM_Mobile"></application>
-  <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
-  <receiver android:name=".ConnectivityReceiver">
-    <intent-filter>
-      <action android:name="vpn.connectivity" />
-    </intent-filter>
-  </receiver>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<receiver android:name=".ConnectivityReceiver">
+		<intent-filter>
+			<action android:name="vpn.connectivity" />
+		</intent-filter>
+	</receiver>
 </manifest>

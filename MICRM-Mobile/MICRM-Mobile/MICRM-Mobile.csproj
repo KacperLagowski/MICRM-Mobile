@@ -41,6 +41,12 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CRMData">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Seneca IM\My Product Name\CRMData.dll</HintPath>
+    </Reference>
+    <Reference Include="CRMInterface">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Seneca IM\My Product Name\CRMInterface.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="mscorlib" />
@@ -55,8 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicSearch.cs" />
-    <Compile Include="Connection Tests.cs" />
-    <Compile Include="Database Connection.cs" />
+    <Compile Include="ConnectionStringProvider.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="RatingSearch.cs" />
@@ -82,6 +87,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SearchResults.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\test.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

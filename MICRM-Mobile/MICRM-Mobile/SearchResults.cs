@@ -21,6 +21,8 @@ namespace MICRM_Mobile
 
             // Create your application here
             SetContentView(Resource.Layout.SearchResults);
+
+
         }
     }
 }

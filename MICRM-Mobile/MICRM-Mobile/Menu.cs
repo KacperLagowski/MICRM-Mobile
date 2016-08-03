@@ -23,7 +23,6 @@ namespace MICRM_Mobile
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-
             
             SetContentView(Resource.Layout.Menu);
 
@@ -54,6 +53,7 @@ namespace MICRM_Mobile
 
         private void Sen_Click(object sender, EventArgs e)
         {
+
         }
     }
 }
