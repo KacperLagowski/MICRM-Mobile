@@ -38,12 +38,14 @@ namespace MICRM_Mobile
         private void Search_Click(object sender, EventArgs e)
         {
             ListView lv = (ListView)FindViewById(Resource.Id.MainList);
-            String[] yourArray = { "item1", "item2" };
-            ArrayAdapter<String> aa = new ArrayAdapter<String>(GetApplicationContext(), Android.Resource.Layout.simple_list_item_1, yourArray);
-            lv.SetAdapter(aa);
+            var adapter = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.user_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            lv.Adapter = adapter;
 
             List<String> searchterms = searchControl.Text.Split(' ').ToList();
-            while(searchterms.Count < 3)
+            while(searchterms.Count < 3)    
             {
                 searchterms.Add(String.Empty);
             }

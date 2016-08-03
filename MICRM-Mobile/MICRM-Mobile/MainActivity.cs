@@ -56,15 +56,16 @@ namespace MICRM_Mobile
 
         private void Login_Click(object sender, EventArgs e)
         {
-            
-                
-                StartActivity(typeof(Menu));
-            Android.Widget.Toast.MakeText(this, new CRMDataCommand("sp_SayHello").FillDataRow().CRMToString("Message"), ToastLength.Short).Show();
 
-            //else
-            //{
-            //    Android.Widget.Toast.MakeText(this, "Check your VPN Connection!", ToastLength.Long).Show();
-            //}
+            try
+            {
+                Android.Widget.Toast.MakeText(this, new CRMDataCommand("sp_SayHello").FillDataRow().CRMToString("Message"), ToastLength.Short).Show();
+                StartActivity(typeof(Menu));
+            }
+            catch
+            {
+                Android.Widget.Toast.MakeText(this, "Check your VPN Connection!", ToastLength.Long).Show();
+            }
         }
 
         private void micrmButton_Click(object sender, EventArgs e)
