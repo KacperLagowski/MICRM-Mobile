@@ -45,11 +45,16 @@
             android:id="@+id/searchButton"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dip" />
+      <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/MainList" />
+      </ScrollView>
     </LinearLayout>
 </ScrollView>
