@@ -14,11 +14,11 @@ using System.Data;
 
 namespace MICRM_Mobile
 {
-    [Activity(Label = "SearchResults")]
+    [Activity(Label = "Search Results")]
     public class SearchResults : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
-        {
+        {   
             base.OnCreate(savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.SearchResults);
@@ -26,6 +26,7 @@ namespace MICRM_Mobile
             CRMDataCommand dc = new CRMDataCommand("spMobileContact");
             dc.ParameterAdd("ContactID", contactid);
             DataRow row = dc.FillDataRow();
+            
             
             int ID = contactid;
             string FirstName = row["FirstName"].ToString();

@@ -124,8 +124,11 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f060033
 			public const int MainList = 2131099699;
 			
-			// aapt resource value: 0x7f060015
-			public const int TextView = 2131099669;
+			// aapt resource value: 0x7f060014
+			public const int TextView = 2131099668;
+			
+			// aapt resource value: 0x7f060016
+			public const int TextView65 = 2131099670;
 			
 			// aapt resource value: 0x7f06001d
 			public const int address1TextView = 2131099677;
@@ -142,8 +145,8 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f06002b
 			public const int borrowsOffice = 2131099691;
 			
-			// aapt resource value: 0x7f060014
-			public const int companyTextView = 2131099668;
+			// aapt resource value: 0x7f060013
+			public const int companyTextView = 2131099667;
 			
 			// aapt resource value: 0x7f06000a
 			public const int contactsButton = 2131099658;
@@ -157,8 +160,8 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f06001a
 			public const int emailTextView = 2131099674;
 			
-			// aapt resource value: 0x7f060016
-			public const int firstnameTextView = 2131099670;
+			// aapt resource value: 0x7f060015
+			public const int firstnameTextView = 2131099669;
 			
 			// aapt resource value: 0x7f060005
 			public const int helpinfoLabel = 2131099653;
@@ -183,9 +186,6 @@ namespace MICRM_Mobile
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
-			
-			// aapt resource value: 0x7f060012
-			public const int list = 2131099666;
 			
 			// aapt resource value: 0x7f060011
 			public const int listView1 = 2131099665;
@@ -259,8 +259,8 @@ namespace MICRM_Mobile
 			// aapt resource value: 0x7f06001b
 			public const int textView7 = 2131099675;
 			
-			// aapt resource value: 0x7f060013
-			public const int textView9 = 2131099667;
+			// aapt resource value: 0x7f060012
+			public const int textView9 = 2131099666;
 			
 			// aapt resource value: 0x7f060024
 			public const int thomasMobile = 2131099684;
@@ -300,19 +300,16 @@ namespace MICRM_Mobile
 			public const int RatingSearch = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int SearchAction = 2130903043;
+			public const int SearchResults = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SearchResults = 2130903044;
+			public const int Seneca = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Seneca = 2130903045;
+			public const int SimpleSearch = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SimpleSearch = 2130903046;
-			
-			// aapt resource value: 0x7f030007
-			public const int test = 2130903047;
+			public const int test = 2130903046;
 			
 			static Layout()
 			{

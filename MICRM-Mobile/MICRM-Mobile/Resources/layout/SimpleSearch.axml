@@ -14,7 +14,8 @@
             android:layout_height="171.0dp"
             android:id="@+id/imageButton1"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/search2" />
+            android:background="@drawable/search2"
+            android:layout_marginTop="50px" />
         <TextView
             android:text="MICRM-M"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -29,32 +30,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@android:dimen/app_icon_size" />
+            android:layout_marginTop="20px" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100px"
             android:id="@+id/searchControl"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dip"
-            android:backgroundTint="#ffc0cbff"
-            android:text="martin taylor" />
+            android:text="martin" />
         <Button
-            android:text="Confirm"
-            android:layout_width="420.0dp"
+            android:text="Confirm Search"
+            android:layout_width="366.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/searchButton"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dip" />
-      <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scroll"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
         <ListView
-            android:minWidth="25px"
-            android:minHeight="25px"
+            android:minWidth="120px"
+            android:minHeight="120px"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/MainList" />
-      </ScrollView>
+            android:layout_height="136.0dp"
+            android:id="@+id/MainList"
+            android:choiceMode="singleChoice"
+            android:layout_gravity="center" />
     </LinearLayout>
 </ScrollView>

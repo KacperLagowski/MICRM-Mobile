@@ -51,5 +51,10 @@ namespace MICRM_Mobile
         public string Country { get; set; }
         public string Postcode { get; set; }
 
+
+        public override string ToString()
+        {
+            return FirstName + " " + LastName + " ";
+        }
     }
 }

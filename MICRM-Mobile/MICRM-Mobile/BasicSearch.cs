@@ -11,34 +11,51 @@ using Android.Widget;
 using Android.Graphics;
 using SIML.CRMData;
 using System.Data;
+using static Android.Widget.AdapterView;
 
 namespace MICRM_Mobile
 {
-    [Activity(Label = "BasicSearch")]
+    [Activity(Label = "Contact Search")]
     public class BasicSearch : Activity
     {
         string[] contactitems;
         Button search;
         EditText searchControl;
         public int contactid;
+        
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             
 
-
+            
             // Create your application here
             SetContentView(Resource.Layout.SimpleSearch);
-            
+            ListView lv = (ListView)FindViewById(Resource.Id.MainList);
             search = FindViewById<Button>(Resource.Id.searchButton);
             search.Click += Search_Click;
             searchControl = FindViewById<EditText>(Resource.Id.searchControl);
-           
+
             
+            lv.ItemClick += new EventHandler<ItemClickEventArgs>(ffff);
+
+
+
         }
 
-        private void Search_Click(object sender, EventArgs e)
+
+        private void ffff(object sender, ItemClickEventArgs e)
+        {
+            ListView lv = (ListView)FindViewById(Resource.Id.MainList);
+            Contact contact = lv.GetItemAtPosition(e.Position).Cast<Contact>();
+            Intent results = new Intent(this, typeof(SearchResults));
+            results.PutExtra("contactid", contact.ID);
+            
+            StartActivity(results);
+        }
+
+        public void Search_Click(object sender, EventArgs e)
         {
 
             List<Contact> contacts = new List<Contact>();
@@ -59,14 +76,17 @@ namespace MICRM_Mobile
             {
                 contacts.Add(new MICRM_Mobile.Contact(row));
             }
+            
 
-            contactitems = new string[] { contacts.Select(p => p.FirmName + ' ' + p.LastName).ToArray().ToString() };
 
-            contactid = 566;
-            Intent results = new Intent(this, typeof(SearchAction));
-            results.PutExtra("contactid", contactid);
-            results.PutStringArrayListExtra("contactitems", contactitems);
-            StartActivity(typeof(SearchAction));
+            ArrayAdapter<Contact> contactsAdapter =
+            new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, contacts);
+            ListView lv = (ListView)FindViewById(Resource.Id.MainList);
+            lv.SetAdapter(contactsAdapter);
+            
+            
+            
+           
             //StartActivity(typeof(SearchResults));
         }
     }

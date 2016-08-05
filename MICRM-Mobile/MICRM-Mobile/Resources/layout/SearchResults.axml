@@ -44,7 +44,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lastnameTextView" />
+            android:id="@+id/TextView65" />
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -100,7 +100,7 @@
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="359.0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/address1TextView"
             android:textColor="@android:color/holo_blue_light" />

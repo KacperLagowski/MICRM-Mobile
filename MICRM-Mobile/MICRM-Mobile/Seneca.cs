@@ -13,7 +13,7 @@ using Uri = Android.Net.Uri;
 
 namespace MICRM_Mobile
 {
-    [Activity(Label = "Seneca")]
+    [Activity(Label = "Seneca Contact List")]
     public class Seneca : Activity
     {
         //Controls Created in region below
