@@ -18,20 +18,23 @@
         p1:layout_gravity="center_horizontal"
         p1:text="Username"
         p1:layout_marginTop="@android:dimen/notification_large_icon_height"
-        p1:textAlignment="0" />
+        p1:textAlignment="0"
+        p1:textColor="@android:color/holo_blue_light" />
     <EditText
         p1:inputType="textPassword"
         p1:layout_width="296.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/passwordTextBox"
         p1:layout_gravity="center_horizontal"
-        p1:text="Password" />
+        p1:text="Password"
+        p1:textColor="@android:color/holo_blue_light" />
     <Button
         p1:text="Log in to MICRM"
         p1:layout_width="302.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/loginButton"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:textColor="@android:color/holo_blue_light" />
     <TextView
         p1:textAppearance="?android:attr/textAppearanceSmall"
         p1:layout_width="292.0dp"

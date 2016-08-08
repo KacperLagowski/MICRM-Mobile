@@ -12,156 +12,179 @@
         android:scrollbarStyle="outsideOverlay">
         <ImageView
             android:src="@drawable/phone"
-            android:layout_width="178.0dp"
+            android:layout_width="182.0dp"
             android:layout_height="176.0dp"
             android:id="@+id/imageView1"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@android:dimen/app_icon_size" />
         <TextView
-            android:text="Select the person you would like to contact"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="match_parent"
+            android:layout_width="162.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView3"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Select a contact" />
         <Button
             android:text="Seneca Investment Managers Office"
             android:layout_width="313.0dp"
             android:layout_height="67.0dp"
             android:id="@+id/mainOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="David Thomas"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="120.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/thomasMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/thomasOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Elaine Smith"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/smithMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/smithOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Peter Elston"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/elstonMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/elstonOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Alan Borrows"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/borrowsMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/borrowsOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Mark Wright"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/wrightMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/wrightOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Martin Taylor"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/taylorMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/taylorOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <TextView
             android:text="Kacper Lagowski"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="142.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000" />
         <Button
             android:text="Mobile"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/lagowskiMobile"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Office"
             android:layout_width="208.0dp"
             android:layout_height="wrap_content"
             android:id="@+id/lagowskiOffice"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light" />
     </LinearLayout>
 </ScrollView>

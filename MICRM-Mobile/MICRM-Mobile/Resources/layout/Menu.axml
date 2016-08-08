@@ -19,24 +19,29 @@
         p1:layout_height="wrap_content"
         p1:id="@+id/textView1"
         p1:layout_gravity="center_horizontal"
-        p1:layout_marginTop="@android:dimen/app_icon_size" />
+        p1:layout_marginTop="@android:dimen/app_icon_size"
+        p1:textColor="@android:color/holo_blue_light" />
     <Button
         p1:text="Basic Search"
         p1:layout_width="314.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/searchButton"
         p1:layout_gravity="center_horizontal"
-        p1:layout_marginTop="25dip" />
+        p1:layout_marginTop="25dip"
+        p1:textColor="@android:color/holo_blue_light" />
     <Button
         p1:text="Rating Search"
         p1:layout_width="318.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/ratingButton"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:textColor="@android:color/holo_blue_light"
+        p1:enabled="false" />
     <Button
         p1:text="seneca contact list"
         p1:layout_width="317.0dp"
         p1:layout_height="wrap_content"
         p1:id="@+id/contactsButton"
-        p1:layout_gravity="center_horizontal" />
+        p1:layout_gravity="center_horizontal"
+        p1:textColor="@android:color/holo_blue_light" />
 </LinearLayout>
