@@ -12,14 +12,14 @@ namespace MICRM_Mobile
     [Activity(Label = "MICRM-M", MainLauncher = true, Icon = "@drawable/crm")]
     public class MainActivity : Activity
     {
-        EditText usernameText;
-        EditText passwordText;
+        //EditText usernameText;
+        //EditText passwordText;
         Button login;
         TextView help;
-        string teststring = "j";
-
+        Spinner userspinner;
         protected override void OnCreate(Bundle bundle)
         {
+            
             base.OnCreate(bundle);
 
             CRMDataCommand dm = new CRMDataCommand();
@@ -27,16 +27,10 @@ namespace MICRM_Mobile
 
             // The main layout
             SetContentView(Resource.Layout.Main);
-
-
             //controls declared in the region below:
             #region 
             Button myButton = FindViewById<Button>(Resource.Id.loginButton);
             myButton.Click += MyButton_Click;
-            usernameText = FindViewById<EditText>(Resource.Id.usernameTextBox);
-            usernameText.Click += usernameText_Click;
-            passwordText = FindViewById<EditText>(Resource.Id.passwordTextBox);
-            passwordText.Click += passwordText_Click;
             ImageButton micrmButton = FindViewById<ImageButton>(Resource.Id.micrmButton);
             micrmButton.Click += micrmButton_Click;
             login = FindViewById<Button>(Resource.Id.loginButton);
@@ -44,19 +38,33 @@ namespace MICRM_Mobile
             help = FindViewById<TextView>(Resource.Id.helpinfoLabel);
             help.Click += Help_Click;
 
+            userspinner = FindViewById<Spinner>(Resource.Id.userSpinner);
+            userspinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(userspinner_ItemSelected);
+            var adapter = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.user_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+
+            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            userspinner.Adapter = adapter;
+
             #endregion
 
 
         }
 
+        private void userspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner userspinner = (Spinner)sender;
+
+            string user = userspinner.SelectedItem.ToString();
+        }
+
         private void Help_Click(object sender, EventArgs e)
         {
-            usernameText.Text = teststring;
         }
 
         private void Login_Click(object sender, EventArgs e)
         {
-
             try
             {
                 Android.Widget.Toast.MakeText(this, new CRMDataCommand("sp_SayHello").FillDataRow().CRMToString("Message"), ToastLength.Short).Show();
@@ -72,16 +80,6 @@ namespace MICRM_Mobile
         {
             StartActivity(new Intent(Intent.ActionCall, Uri.Parse("tel:01519062482")));
 
-        }
-
-
-        private void passwordText_Click(object sender, EventArgs e)
-        {
-            passwordText.Text = String.Empty;
-        }
-        private void usernameText_Click(object sender, EventArgs e)
-        {
-            usernameText.Text = String.Empty;
         }
         private void MyButton_Click(object sender, EventArgs e)
         {

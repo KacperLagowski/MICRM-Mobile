@@ -24,14 +24,22 @@
             android:id="@+id/textView3"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light"
-            android:text="Select a contact" />
+            android:text="Select a contact"
+            android:layout_marginTop="25px" />
         <Button
             android:text="Seneca Investment Managers Office"
             android:layout_width="313.0dp"
             android:layout_height="67.0dp"
             android:id="@+id/mainOffice"
             android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/holo_blue_light" />
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginTop="25px" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/davidt" />
         <TextView
             android:text="David Thomas"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -54,6 +62,12 @@
             android:id="@+id/thomasOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/elainesmith" />
         <TextView
             android:text="Elaine Smith"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -76,6 +90,12 @@
             android:id="@+id/smithOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView5"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/peterelston" />
         <TextView
             android:text="Peter Elston"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -98,6 +118,12 @@
             android:id="@+id/elstonOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView5"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alanborrows" />
         <TextView
             android:text="Alan Borrows"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -120,6 +146,12 @@
             android:id="@+id/borrowsOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView6"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/markwright" />
         <TextView
             android:text="Mark Wright"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -142,6 +174,12 @@
             android:id="@+id/wrightOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView7"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/martintaylor" />
         <TextView
             android:text="Martin Taylor"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -164,6 +202,12 @@
             android:id="@+id/taylorOffice"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/holo_blue_light" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView8"
+            android:background="@drawable/kacperlagowski"
+            android:layout_gravity="center_horizontal" />
         <TextView
             android:text="Kacper Lagowski"
             android:textAppearance="?android:attr/textAppearanceMedium"

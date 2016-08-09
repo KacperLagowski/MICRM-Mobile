@@ -16,6 +16,7 @@ namespace MICRM_Mobile
     [Activity(Label = "Seneca Contact List")]
     public class Seneca : Activity
     {
+       
         //Controls Created in region below
         #region
         Button mainoffice;
