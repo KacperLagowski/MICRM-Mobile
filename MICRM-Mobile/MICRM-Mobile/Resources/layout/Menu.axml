@@ -11,7 +11,7 @@
         p1:id="@+id/imageView1"
         p1:layout_gravity="center_horizontal"
         p1:background="@drawable/crm"
-        p1:layout_marginTop="@android:dimen/app_icon_size" />
+        p1:layout_marginTop="25px" />
     <TextView
         p1:text="Select from a list of options"
         p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -37,6 +37,13 @@
         p1:layout_gravity="center_horizontal"
         p1:textColor="@android:color/holo_blue_light"
         p1:enabled="false" />
+    <TextView
+        p1:text="*This option is not available yet"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="310.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView2"
+        p1:layout_gravity="center" />
     <Button
         p1:text="seneca contact list"
         p1:layout_width="317.0dp"

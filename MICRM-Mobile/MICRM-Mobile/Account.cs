@@ -21,7 +21,6 @@ namespace MICRM_Mobile
             UserName = dr["UserName"].ToString();
             Date = dr["Date"].ToString();
         }
-
         string UserName { get; set; }
         string Date { get; set; }
     }

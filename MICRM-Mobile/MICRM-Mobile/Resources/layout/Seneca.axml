@@ -26,6 +26,13 @@
             android:textColor="@android:color/holo_blue_light"
             android:text="Select a contact"
             android:layout_marginTop="25px" />
+        <TextView
+            android:text="*Remember that your call starts straight after you press the button!"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="219.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_gravity="center" />
         <Button
             android:text="Seneca Investment Managers Office"
             android:layout_width="313.0dp"

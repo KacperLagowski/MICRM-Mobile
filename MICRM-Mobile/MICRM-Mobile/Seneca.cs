@@ -15,8 +15,7 @@ namespace MICRM_Mobile
 {
     [Activity(Label = "Seneca Contact List")]
     public class Seneca : Activity
-    {
-       
+    { 
         //Controls Created in region below
         #region
         Button mainoffice;
@@ -39,12 +38,8 @@ namespace MICRM_Mobile
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Create your application here
-
             SetContentView(Resource.Layout.Seneca);
-
-            //events for buttons, all the same
+            //Controls below
             #region
             mainoffice = FindViewById<Button>(Resource.Id.mainOffice);
             mainoffice.Click += mainoffice_Click;

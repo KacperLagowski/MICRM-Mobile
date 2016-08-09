@@ -16,7 +16,6 @@ namespace MICRM_Mobile
 {
     public class Contact
     {
-
         public Contact (DataRow row)
         {
              ID = row.CRMToInt("ID");
@@ -34,8 +33,9 @@ namespace MICRM_Mobile
              Country = row["Country"].ToString();
              Postcode = row["Postcode"].ToString();
         }
-          
-            
+
+        //Parameters declared below
+        #region   
         public int ID { get; set; } 
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -50,7 +50,7 @@ namespace MICRM_Mobile
         public string City { get; set; }
         public string Country { get; set; }
         public string Postcode { get; set; }
-
+        #endregion
 
         public override string ToString()
         {

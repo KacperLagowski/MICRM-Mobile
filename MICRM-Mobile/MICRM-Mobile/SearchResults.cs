@@ -20,14 +20,12 @@ namespace MICRM_Mobile
         protected override void OnCreate(Bundle savedInstanceState)
         {   
             base.OnCreate(savedInstanceState);
-            // Create your application here
             SetContentView(Resource.Layout.SearchResults);
             int contactid = Intent.GetIntExtra("contactid", 0);
             CRMDataCommand dc = new CRMDataCommand("spMobileContact");
             dc.ParameterAdd("ContactID", contactid);
             DataRow row = dc.FillDataRow();
-            
-            
+            //Getting the values from the search screen
             int ID = contactid;
             string FirstName = row["FirstName"].ToString();
             string LastName = row["LastName"].ToString();
@@ -42,29 +40,19 @@ namespace MICRM_Mobile
             string City = row["City"].ToString();
             string Country = row["Country"].ToString();
             string Postcode = row["Postcode"].ToString();
-
+            //Getting the controls out of the Resource
             TextView firstname = FindViewById<TextView>(Resource.Id.firstnameTextView);
-
             TextView lastname = FindViewById<TextView>(Resource.Id.lastnameTextView);
-
             TextView email = FindViewById<TextView>(Resource.Id.emailTextView);
-
             TextView phone = FindViewById<TextView>(Resource.Id.phoneTextView);
-
             TextView address1 = FindViewById<TextView>(Resource.Id.address1TextView);
-
             TextView address2 = FindViewById<TextView>(Resource.Id.address2TextView);
-
             TextView address3 = FindViewById<TextView>(Resource.Id.address3TextView);
-
             TextView postcode = FindViewById<TextView>(Resource.Id.postcodeTextView);
-
             TextView tags = FindViewById<TextView>(Resource.Id.tagsTextView);
-
             TextView jobtitle = FindViewById<TextView>(Resource.Id.jobTextView);
-
             TextView company = FindViewById<TextView>(Resource.Id.companyTextView);
-
+            //Assigning values to controls
             firstname.Text = FirstName;
             lastname.Text = LastName;
             email.Text = Email;
@@ -75,10 +63,6 @@ namespace MICRM_Mobile
             address3.Text = AddressLine3;
             postcode.Text = Postcode;
             company.Text = FirmName;
-
-
-
-
         }
         }
     }

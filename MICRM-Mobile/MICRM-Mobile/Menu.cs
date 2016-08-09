@@ -21,17 +21,11 @@ namespace MICRM_Mobile
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Create your application here
-            
             SetContentView(Resource.Layout.Menu);
-
             sen = FindViewById<Button>(Resource.Id.contactsButton);
             sen.Click += Sen_Click1;
-
             basic = FindViewById<Button>(Resource.Id.searchButton);
             basic.Click += Basic_Click;
-
             rating = FindViewById<Button>(Resource.Id.ratingButton);
             rating.Click += Rating_Click;
         }
@@ -49,11 +43,6 @@ namespace MICRM_Mobile
         private void Sen_Click1(object sender, EventArgs e)
         {
             StartActivity(typeof(Seneca));
-        }
-
-        private void Sen_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

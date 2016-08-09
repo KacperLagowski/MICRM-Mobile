@@ -21,8 +21,6 @@ namespace MICRM_Mobile
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Create your application here
             SetContentView(Resource.Layout.RatingSearch);
             
             //User spinner
@@ -65,21 +63,18 @@ namespace MICRM_Mobile
         private void Subjectspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner Subjectspinner = (Spinner)sender;
-
             string user = Subjectspinner.SelectedItem.ToString();
         }
 
         private void Ratingspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner Ratingspinner = (Spinner)sender;
-
             string user = Ratingspinner.SelectedItem.ToString();
         }
 
         private void Userspinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner Userspinner = (Spinner)sender;
-
             string user = Userspinner.SelectedItem.ToString();
         }
     }

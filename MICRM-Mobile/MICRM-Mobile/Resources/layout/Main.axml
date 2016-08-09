@@ -11,14 +11,18 @@
         p1:layout_gravity="center"
         p1:background="@drawable/crm" />
     <Spinner
-        p1:layout_width="309.3dp"
-        p1:layout_height="51.0dp"
+        p1:layout_width="201.0dp"
+        p1:layout_height="56.5dp"
         p1:id="@+id/userSpinner"
         p1:layout_marginTop="50px"
         p1:layout_marginBottom="50px"
-        p1:layout_gravity="center"
-        p1:textAlignment="center"
-        p1:background="@android:color/holo_blue_light" />
+        p1:layout_gravity="center" />
+    <EditText
+        p1:inputType="numberPassword"
+        p1:layout_width="149.0dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/editText1"
+        p1:layout_gravity="center" />
     <Button
         p1:text="Log in to MICRM"
         p1:layout_width="302.0dp"
