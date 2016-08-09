@@ -61,6 +61,7 @@ namespace MICRM_Mobile
             new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, contacts);
             ListView lv = (ListView)FindViewById(Resource.Id.MainList);
             lv.SetAdapter(contactsAdapter);
+            searchControl.Text = String.Empty;
         }
     }
     }

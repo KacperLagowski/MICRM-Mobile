@@ -42,13 +42,12 @@
             android:textColor="@android:color/holo_blue_light" />
         <Button
             android:text="Confirm Search"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="265.5dp"
+            android:layout_height="53.3dp"
             android:id="@+id/searchButton"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dip"
-            android:textColor="@android:color/holo_blue_light"
-            android:background="#682164" />
+            android:textColor="@android:color/holo_blue_light" />
         <ListView
             android:minWidth="120px"
             android:minHeight="120px"
