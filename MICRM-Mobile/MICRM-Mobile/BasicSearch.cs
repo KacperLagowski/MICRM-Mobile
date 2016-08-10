@@ -18,7 +18,6 @@ namespace MICRM_Mobile
     [Activity(Label = "Contact Search")]
     public class BasicSearch : Activity
     {
-        string[] contactitems;
         Button search;
         EditText searchControl;
         public int contactid;
@@ -37,7 +36,7 @@ namespace MICRM_Mobile
             ListView lv = (ListView)FindViewById(Resource.Id.MainList);
             Contact contact = lv.GetItemAtPosition(e.Position).Cast<Contact>();
             Intent results = new Intent(this, typeof(SearchResults));
-            results.PutExtra("contactid", contact.ID);   
+            results.PutExtra("contactid", contact.ID);
             StartActivity(results);
         }
         public void Search_Click(object sender, EventArgs e)
@@ -64,4 +63,4 @@ namespace MICRM_Mobile
             searchControl.Text = String.Empty;
         }
     }
-    }
+}

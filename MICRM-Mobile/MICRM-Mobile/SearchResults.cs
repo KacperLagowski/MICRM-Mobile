@@ -25,6 +25,7 @@ namespace MICRM_Mobile
             CRMDataCommand dc = new CRMDataCommand("spMobileContact");
             dc.ParameterAdd("ContactID", contactid);
             DataRow row = dc.FillDataRow();
+
             //Getting the values from the search screen
             int ID = contactid;
             string FirstName = row["FirstName"].ToString();
@@ -40,6 +41,7 @@ namespace MICRM_Mobile
             string City = row["City"].ToString();
             string Country = row["Country"].ToString();
             string Postcode = row["Postcode"].ToString();
+
             //Getting the controls out of the Resource
             TextView firstname = FindViewById<TextView>(Resource.Id.firstnameTextView);
             TextView lastname = FindViewById<TextView>(Resource.Id.lastnameTextView);
@@ -52,6 +54,7 @@ namespace MICRM_Mobile
             TextView tags = FindViewById<TextView>(Resource.Id.tagsTextView);
             TextView jobtitle = FindViewById<TextView>(Resource.Id.jobTextView);
             TextView company = FindViewById<TextView>(Resource.Id.companyTextView);
+
             //Assigning values to controls
             firstname.Text = FirstName;
             lastname.Text = LastName;
