@@ -1,7 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 
-namespace MICRM_M_iOS
+namespace MICRM_M
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
@@ -9,7 +9,7 @@ namespace MICRM_M_iOS
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
-      
+
         public override UIWindow Window
         {
             get;
@@ -18,15 +18,14 @@ namespace MICRM_M_iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            
             // create a new window instance based on the screen size
-            //Window = new UIWindow(UIScreen.MainScreen.Bounds);
+            Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            //// If you have defined a root view controller, set it here:
-            //// Window.RootViewController = myViewController;
+            // If you have defined a root view controller, set it here:
+            // Window.RootViewController = myViewController;
 
-            //// make the window visible
-            //Window.MakeKeyAndVisible();
+            // make the window visible
+            Window.MakeKeyAndVisible();
 
             return true;
         }
