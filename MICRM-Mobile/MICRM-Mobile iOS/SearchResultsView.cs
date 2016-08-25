@@ -11,17 +11,11 @@ using UIKit;
 namespace MICRM_Mobile_iOS
 {
     public partial class SearchResultsView : UIViewController
-    { 
-
+    {
+        
         public SearchResultsView (IntPtr handle) : base (handle)
         {
-            //queryButton.TouchUpInside += QueryButton_TouchUpInside;
-        }
-
-        private void QueryButton_TouchUpInside(object sender, EventArgs e)
-        {
-            //new UIAlertView("Touch3", "TouchUpInside handled", null, "OK", null).Show();
-            //search();
+            
         }
 
         public void search()
@@ -29,6 +23,7 @@ namespace MICRM_Mobile_iOS
             List<Contact> contacts = new List<Contact>();
             List<String> searchterms = searchTextBox.Text.Split(' ').ToList();
             while (searchterms.Count < 3)
+
             {
                 searchterms.Add(String.Empty);
             }

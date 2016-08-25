@@ -28,7 +28,7 @@ namespace MICRM_Mobile_iOS
 
         [Action (" b:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void  b (MICRM_Mobile_iOS.queryButton sender);
+        partial void b (MICRM_Mobile_iOS.queryButton sender);
 
         void ReleaseDesignerOutlets ()
         {

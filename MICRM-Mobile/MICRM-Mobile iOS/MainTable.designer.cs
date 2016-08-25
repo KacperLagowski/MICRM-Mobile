@@ -14,5 +14,8 @@ namespace MICRM_Mobile_iOS
     [Register ("MainTable")]
     partial class MainTable
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }
